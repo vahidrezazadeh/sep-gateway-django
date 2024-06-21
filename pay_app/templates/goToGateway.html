@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Please Wait | Go To Gateway</title>
+</head>
+
+<body>
+    <h2>
+        لطفا صبر کنید و این حرفا
+    </h2>
+    <form id="payForm" action="https://sep.shaparak.ir/OnlinePG/OnlinePG" method="post">
+        <input type="hidden" name="Token" value="{{ token }}" />
+        <input name="GetMethod" type="hidden" value=""> <!--true | false | empty string | null-->
+    </form>
+
+    <script>
+        alert("this is ok");
+        var elForm = document.getElementById("payForm");
+        elForm.submit();
+    </script>
+
+
+</body>
+
+</html>
